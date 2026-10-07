@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.awards-list {
+	list-style: disc;
+	padding-left: 1.25rem;
+}
+
+.awards-list > li {
+	margin-bottom: 0.5rem;
+}
