@@ -1,5 +1,4 @@
-import React from 'react'
-import BrokerageCalculator from './Brokerage.calculator';
+import BrokerageCalculator from './BrokerageCalculator';
 import PricingPage from './PricingPage';
 
 const Home = () => {

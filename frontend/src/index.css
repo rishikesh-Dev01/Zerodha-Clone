@@ -8,3 +8,26 @@
 .awards-list > li {
 	margin-bottom: 0.5rem;
 }
+
+.bg-gray-50 > .container > .flex.justify-between {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	column-gap: 1.5rem;
+	row-gap: 0.75rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.bg-gray-50 > .container > .flex.justify-between > :is(a, p) {
+	margin: 0;
+	color: #6c757d;
+	font-size: 0.875rem;
+	line-height: 1.5;
+	text-decoration: none;
+}
+
+.bg-gray-50 > .container > .flex.justify-between > a:hover {
+	color: #387ed1;
+}

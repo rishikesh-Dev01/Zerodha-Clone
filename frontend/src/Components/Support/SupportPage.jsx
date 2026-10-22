@@ -1,4 +1,3 @@
-import React from 'react'
 import SupportContent from './SupportContent';
 import MyTicketsButton from './MyTicketsButton';
 import SupportTitle from './SupportTitle';

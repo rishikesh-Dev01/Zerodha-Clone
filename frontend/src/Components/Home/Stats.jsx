@@ -19,8 +19,8 @@ const Stats = () => {
                 <div className="col-6 p-4">
                     <img src="/images/ecosystem.png" alt="" />
                     <div className="text-center no-underline">
-                        <a href="" className="mx-5 text-decoration-none">Explore our products <i class="fa-solid fa-arrow-right-long"></i></a>
-                        <a href="" className="text-decoration-none">Try Kite demo <i class="fa-solid fa-arrow-right-long"></i></a>
+                        <a href="" className="mx-5 text-decoration-none">Explore our products <i className="fa-solid fa-arrow-right-long"></i></a>
+                        <a href="" className="text-decoration-none">Try Kite demo <i className="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </div>
             </div>
