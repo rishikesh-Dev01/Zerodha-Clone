@@ -1,6 +1,14 @@
+
+import Brokerage from './Brokerage';
+import Home from './Home';
+import OpenAccount from '../OpenAccount'
 const PricingPage = () => {
   return (
-    <div>PricingPage</div>
+    <div>
+         <Home/>
+         <OpenAccount/>
+         <Brokerage/>
+    </div>
   )
 }
 

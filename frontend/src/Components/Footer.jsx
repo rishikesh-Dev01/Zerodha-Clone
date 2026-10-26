@@ -3,48 +3,39 @@ const Footer = () => {
     <div className="bg-gray-50">
       <div className="container border-top">
         <div className="row p-5 ml-3">
-          <div className="col">
+          <div className="col-12 col-md-3 min-w-0">
             <img
               src="/images/logo.svg"
               alt="Zerodha footer"
               width="130"
               height="30"
+              className="mw-100"
             />
-            <p className="mt-3 text-sm text-muted">
+            <p className="mt-3 mb-0 text-sm text-muted">
               &copy; 2010 - 2026, Zerodha Broking Ltd. All rights reserved.
             </p>
-            <div className="row mt-3 text-muted">
-              <div className="col">
-                <p><i className="fa-brands fa-x-twitter"></i></p>
-              </div>
-              <div className="col">
-                <p><i className="fa-brands fa-square-facebook"></i></p>
-              </div>
-              <div className="col">
-                <p><i className="fa-brands fa-square-instagram"></i></p>
-              </div>
-              <div className="col">
-                <p><i className="fa-brands fa-square-linkedin"></i></p>
-              </div>
-              <div className="col"></div>
-              <div className="col"></div>
+            <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xl text-muted">
+              <i className="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              <i className="fa-brands fa-square-facebook" aria-hidden="true"></i>
+              <i className="fa-brands fa-square-instagram" aria-hidden="true"></i>
+              <i className="fa-brands fa-square-linkedin" aria-hidden="true"></i>
             </div>
 
-            <div className="row border-top p-2">
-              <div className="col mt-3">
+            <div className="mt-3 flex flex-wrap gap-2 border-top pt-3">
+              <div className="block max-w-full">
                 <img
-                  src="/images/googlePlayBadge.svg"
-                  width="135"
-                  height="35"
-                  alt=""
+                  src="/images/footerGooglePlayBadge.svg"
+                  width="112"
+                  alt="Get it on Google Play"
+                  className="img-fluid"
                 />
               </div>
-              <div className="col mt-3 mr-2">
+              <div className="block max-w-full">
                 <img
-                  src="/images/appstoreBadge.svg"
-                  width="135"
-                  height="35"
-                  alt=""
+                  src="/images/footerAppstoreBadge.svg"
+                  width="112"
+                  alt="Download on the App Store"
+                  className="img-fluid"
                 />
               </div>
             </div>
@@ -178,18 +169,18 @@ const Footer = () => {
             Bank of India (RBI).
           </p>
         </div>
-        <div className="flex justify-between p-3 text-muted text-sm">
-            <a>NSE</a>
-            <a>BSE</a>
-            <a>MCX </a>
-            <a>MSEI </a>
-            <a>Terms & conditions</a>
-            <a>Policies & procedures </a>
-            <a>Privacy policy </a>
-            <a>Disclosure </a>
-            <a>For investor's attention </a>
-            <a>Investor charter </a>
-            <a>Sitemap</a>
+        <div className="flex flex-wrap justify-center items-center gap-x-5 gap-y-4 p-2 text-muted text-sm">
+          <a>NSE</a>
+          <a>BSE</a>
+          <a>MCX</a>
+          <a>MSEI</a>
+          <a>Terms & conditions</a>
+          <a>Policies & procedures</a>
+          <a>Privacy policy</a>
+          <a>Disclosure</a>
+          <a>For investor's attention</a>
+          <a>Investor charter</a>
+          <a>Sitemap</a>
         </div>
       </div>
     </div>

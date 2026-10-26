@@ -31,3 +31,36 @@
 .bg-gray-50 > .container > .flex.justify-between > a:hover {
 	color: #387ed1;
 }
+
+.img {
+	border-radius: 50%;
+	border: none;
+	height: 300px;
+	margin-left: 60px;
+	align-items: center;
+}
+
+.univers {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 80px;
+	
+}
+
+.btn {
+	background-color: #387ed1;
+	border: none;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	color: whitesmoke;
+	
+}
+
+.img-price {
+	height: 250px;
+	width: auto;
+	padding: 30px;
+	margin-left: 20px;
+}

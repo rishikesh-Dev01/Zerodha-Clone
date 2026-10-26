@@ -1,13 +1,11 @@
-import SupportContent from './SupportContent';
-import MyTicketsButton from './MyTicketsButton';
-import SupportTitle from './SupportTitle';
+import CreateTicket from "./CreateTicket";
+import Hero from "./Hero";
 
 const SupportPage = () => {
   return (
     <div>
-        <SupportContent/>
-        <MyTicketsButton/>
-        <SupportTitle/>
+          <Hero/>
+         <CreateTicket/>
     </div>
   )
 }

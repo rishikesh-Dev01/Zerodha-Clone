@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
 const links = [
   { label: "Signup", href: "/signup" },
@@ -15,9 +16,9 @@ const Navbar = () => {
   return (
     <nav className="zd-navbar" aria-label="Main navigation">
       <div className="zd-container">
-        <a className="zd-brand" href="/" aria-label="Zerodha home">
+        <Link className="zd-brand" to="/" aria-label="Zerodha home">
           <img src="/images/logo.svg" alt="Zerodha" width="120" height="24" />
-        </a>
+        </Link>
 
         <button
           className="zd-menu-toggle"
@@ -39,13 +40,13 @@ const Navbar = () => {
           <ul className="zd-links">
             {links.map(({ label, href }) => (
               <li key={label}>
-                <a
+                <Link
                   className="zd-nav-link"
-                  href={href}
+                  to={href}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
