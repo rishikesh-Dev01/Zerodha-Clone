@@ -1,0 +1,310 @@
+ 
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0c0d11;
+  color: #f4f5f7;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  min-width: 320px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: 100%;
+  height: 44px;
+  background-color: #181818;
+}
+
+#header-left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  gap: 30px;
+  flex: 0 0 28%;
+  min-width: 0;
+  height: 44px;
+  font: 12px;
+  background-color: #363636;
+}
+
+.nifty {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #BBBBBB;
+  gap: 10px;
+}
+
+.sensex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #BBBBBB;
+}
+
+.nifty p,
+.sensex p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.menu-container {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+  justify-content: space-between;
+  gap: clamp(12px, 1.4vw, 20px);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  background-color: #363636;
+  height: 44px;
+}
+
+.brand-search {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 20px;
+  gap: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex: 0 1 200px;
+  min-width: 120px;
+  height: 30px;
+  gap: 8px;
+  padding: 0 10px;
+  color: #bdbdbd;
+  border: 1px solid #555;
+  border-radius: 3px;
+}
+
+.search-icon {
+  flex: 0 0 auto;
+  width: 13px;
+  height: 13px;
+}
+
+.search-container input {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  color: #f4f5f7;
+  font-size: 0.75rem;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.search-container input::placeholder {
+  color: #9c9c9c;
+}
+
+.search-container:focus-within {
+  border-color: #888;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  margin-left: calc(130px - clamp(12px, 1.4vw, 20px));
+  min-width: 0;
+}
+
+.menus ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.menus li {
+  display: block;
+}
+
+.menus p {
+  margin: 0;
+}
+
+.menu {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #bdbdbd;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.menu.selected {
+  color: #f56834;
+}
+
+.menu-divider {
+  flex: 0 0 auto;
+  width: 1px;
+  height: 24px;
+  margin-left: 50px;
+  background-color: #5b5b5b;
+}
+
+.toolbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #bdbdbd;
+}
+
+.toolbar-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+  color: #bdbdbd;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 8px;
+  margin-left: 0;
+}
+
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(221, 139, 221);
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  background: rgb(252, 229, 252);
+  margin-right: 0;
+}
+
+.profile .username {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+/* sudo selectors */
+
+.menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.menu:focus-visible {
+  outline: 2px solid #f56834;
+  outline-offset: 4px;
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.profile:hover .username {
+  cursor: pointer;
+  color: rgb(223, 91, 43);
+}
+
+.watchlist-container {
+  flex: 0 0 27.7%;
+  min-width: 0;
+  height: calc(100% - 10px);
+  margin: 5px 0 5px 5px;
+  padding: 18px 16px;
+  background-color: #181818;
+  overflow-y: auto;
+  /* border-right: 1px solid #333; */
+}
+
+.watchlist-search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 36px;
+  gap: 10px;
+  padding: 0 11px;
+  color: #a7a7a7;
+  background-color: #202020;
+  border: 1px solid #444;
+  border-radius: 4px;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.watchlist-search:focus-within {
+  background-color: #242424;
+  border-color: #777;
+}
+
+.watchlist-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  color: #f4f5f7;
+  font-size: 0.8rem;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.watchlist-search input::placeholder {
+  color: #929292;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 44px);
+  margin-top: 44px;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 0;
+  min-width: 0;
+  height: calc(100% - 10px);
+  margin: 5px 5px 5px 0;
+  background-color: #181818;
+  overflow-y: auto;
+}
+
+.summary-link {
+  text-decoration: none;
+}
