@@ -1,6 +1,13 @@
+import OrderNav from "../OrdersPage/OrderNav";
+
 const Orders = () => {
   return (
-    <div>Orders</div>
+    <div className="w-full min-w-0">
+        <OrderNav/>
+        <div className="">
+            <h1>Orders</h1>
+        </div>
+    </div>
   )
 }
 

@@ -1,12 +1,10 @@
 
+import Navbar2 from "./Navbar2";
 
 const Summary = () => {
   return (
     <div className="w-full min-w-0">
-      <div className=" flex w-full items-center gap-4 border-b border-[#333] ">
-        <span className="cursor-pointer p-3 ml-7 text-orange-600 active:scale-95">Dashboard</span>
-        <span className="cursor-pointer active:scale-95">Stock Screener</span>
-      </div>
+        <Navbar2/>
 
       <div className="mt-3 w-full border-b border-[#333] px-3 py-3">
         <p className="text-2xl ml-5">Hi, Rishikesh</p>

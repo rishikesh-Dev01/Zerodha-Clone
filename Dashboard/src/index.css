@@ -219,6 +219,10 @@ input {
 .profile .username {
   font-size: 0.8rem;
   font-weight: 300;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 /* sudo selectors */
